@@ -421,6 +421,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
     mainImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &
+      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
